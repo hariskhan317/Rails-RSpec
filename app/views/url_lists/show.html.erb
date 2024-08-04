@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @url_list %>
+
+<div>
+  <%= link_to "Edit this url list", edit_url_list_path(@url_list) %> |
+  <%= link_to "Back to url lists", url_lists_path %>
+
+  <%= button_to "Destroy this url list", @url_list, method: :delete %>
+</div>

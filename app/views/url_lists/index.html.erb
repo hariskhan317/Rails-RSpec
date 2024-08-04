@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Url lists</h1>
+
+<div id="url_lists">
+  <% @url_lists.each do |url_list| %>
+    <%= render url_list %>
+    <p>
+      <%= link_to "Show this url list", url_list %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New url list", new_url_list_path %>
